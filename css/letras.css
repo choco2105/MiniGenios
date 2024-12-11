@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffebf0, #d6f9ff);
+    color: #333;
+    text-align: center;
+}
+
+.game-container {
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+.lives {
+    color: red;
+}
+
+.timer {
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.grid div {
+    background: #ffd1dc;
+    color: #333;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.grid div:hover {
+    transform: scale(1.1);
+    background: #ff9aa2;
+}
+
+.grid div.correct {
+    background: #a7f3a1;
+    color: #fff;
+}
+
+.grid div.incorrect {
+    background: #f3a1a1;
+    color: #fff;
+}

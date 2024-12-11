@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffebf0, #d6f9ff);
+    color: #333;
+    text-align: center;
+}
+
+/* Contenedor del menú */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #4a4a4a;
+    animation: bounce 2s infinite;
+}
+
+/* Botones del menú */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-buttons button {
+    background: linear-gradient(45deg, #ffd1dc, #ffe9a7);
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #ffe9a7, #ffd1dc);
+}
+
+/* Animación del título */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

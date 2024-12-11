@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffcccc, #ffe6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lose-container {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: pop 1s ease-out;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff4d4d;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.motivational {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.graphics {
+    font-size: 2rem;
+    margin-top: 20px;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

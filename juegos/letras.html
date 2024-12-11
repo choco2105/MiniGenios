@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caza Letras</title>
+    <link rel="stylesheet" href="../css/letras.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Caza Letras</h1>
+            <p>Encuentra todas las letras <span id="target-letter">a</span></p>
+        </header>
+        <div class="stats">
+            <div class="lives">❤️ ❤️ ❤️</div>
+            <div class="score">Puntaje: <span id="score">0</span></div>
+            <div class="timer">⏳ Tiempo: <span id="time">30</span>s</div>
+        </div>
+        <div class="grid" id="letter-grid">
+            <!-- Letras generadas dinámicamente -->
+        </div>
+    </div>
+    <script src="../js/letras.js"></script>
+</body>
+</html>
